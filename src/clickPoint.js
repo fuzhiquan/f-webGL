@@ -40,7 +40,7 @@ function click(e, gl, canvas, a_Position) {
         // 将数据传递由loaction参数指定attribute变量, 最后一个0.0是z轴
         gl.vertexAttrib3f(a_Position, point[0], point[1], 0.0)
         // 画一个点，从第几个顶点开始，画几个
-        gl.drawArrays(gl.POINT, 0, 1)
+        gl.drawArrays(gl.POINTS, 0, 1)
     })
 }
 main()
