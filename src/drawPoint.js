@@ -12,8 +12,8 @@ function main() {
     const canvas = document.getElementById('webgl')
     const gl = getWebGLContext(canvas)
 
-    const initState = initShaders(gl, VSHADER_SOURCE, FSHADER_SOURCE)
-    if(!initState) {
+    const initResult = initShaders(gl, VSHADER_SOURCE, FSHADER_SOURCE)
+    if(!initResult) {
         console.log('failed')
         return
     }
