@@ -24,7 +24,8 @@ function main() {
     }
     gl.clearColor(0.3,0.3,0.3,1.0)
     gl.clear(gl.COLOR_BUFFER_BIT)
-    gl.drawArrays(gl.TRIANGLE_STRIP, 0, n)
+    //gl.drawArrays(gl.TRIANGLE_STRIP, 0, n)
+    gl.drawArrays(gl.TRIANGLE_FAN, 0 ,n)
 }
 function initVertexBuffers(gl) {
     const vertices = new Float32Array([
